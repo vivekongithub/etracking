@@ -1,6 +1,12 @@
 {
   "name": "etracking",
   "main": "server.js",
+  "description": "Tracking apis authorized using jwt",
+  "version": "1.0.0",
+  "repository" :{
+    "type" : "git",
+    "url" : "https://github.com/vivekongithub/etracking.git"
+  },
   "dependencies": {
     "body-parser": "^1.15.1",
     "express": "^4.13.4",
@@ -8,5 +14,8 @@
     "mongoose": "^4.4.19",
     "morgan": "^1.7.0"
   },
-  "version": "1.0.0"
+  "scripts":{
+    "prestart": "npm install",
+    "start":"node server.js"
+  }
 }
